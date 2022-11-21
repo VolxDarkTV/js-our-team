@@ -61,10 +61,7 @@ for (i = 0; i < ourTeam.length; i++){
 }
 
 // Per ogni oggetto dell'array deve creare un div
-for (i = 0; i < 5; i++){
-    
-    createBox('div', 'box', [i]);
-}
+
 
 
 
