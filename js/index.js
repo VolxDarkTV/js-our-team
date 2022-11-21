@@ -50,3 +50,6 @@ const ourTeam = [
     },
 ]
 
+for (i = 0; i < ourTeam.length; i++){
+    console.log(ourTeam[i].nome);
+}
