@@ -51,5 +51,9 @@ const ourTeam = [
 ]
 
 for (i = 0; i < ourTeam.length; i++){
-    console.log(ourTeam[i].nome);
+    let objIesimo = ourTeam[i];
+    // console.log(objIesimo);
+    for(let key in objIesimo){
+        console.log(key, objIesimo[key]);
+    }
 }
