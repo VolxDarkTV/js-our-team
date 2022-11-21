@@ -59,3 +59,24 @@ for (i = 0; i < ourTeam.length; i++){
         contenitore.append(`${key}, ${objIesimo[key]}`)
     }
 }
+
+// Per ogni oggetto dell'array deve creare un div
+for (i = 0; i < 5; i++){
+    
+    createBox('div', 'box', [i]);
+}
+
+
+
+
+// FUNCTIONS
+function createBox(tipoElemento, classe, insertData){
+    // Creo un elemento div
+    const mioElemnt = document.createElement(tipoElemento);
+    mioElemnt.classList.add(classe);
+    // Aggiungo un parametro alla funzione per aggiungere gli elementi
+    const addData = document.createTextNode(insertData);
+    mioElemnt.appendChild(addData);
+
+    return mioElemnt;
+}
