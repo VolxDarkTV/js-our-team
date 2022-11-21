@@ -5,7 +5,7 @@ const ourTeam = [
         'nome' : 'Wayne',
         'cognome' : 'Barnett',
         'role' : 'Founder & CEO',
-        'image' : 'immagine da sostituire'
+        'image' : 'img/wayne'
 
     },
     // Caroll
@@ -61,6 +61,16 @@ for (i = 0; i < ourTeam.length; i++){
 }
 
 // Per ogni oggetto dell'array deve creare un div
+
+
+for(i = 0; i < ourTeam.length; i++){
+    let crea = createBox('div', 'box', [i]);
+
+}
+
+
+
+
 
 
 
