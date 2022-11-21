@@ -55,5 +55,7 @@ for (i = 0; i < ourTeam.length; i++){
     // console.log(objIesimo);
     for(let key in objIesimo){
         console.log(key, objIesimo[key]);
+        let contenitore = document.getElementById('info');
+        contenitore.append(`${key}, ${objIesimo[key]}`)
     }
 }
