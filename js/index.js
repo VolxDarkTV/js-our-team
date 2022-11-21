@@ -50,22 +50,22 @@ const ourTeam = [
     },
 ]
 
-for (i = 0; i < ourTeam.length; i++){
-    let objIesimo = ourTeam[i];
-    // console.log(objIesimo);
-    for(let key in objIesimo){
-        console.log(key, objIesimo[key]);
-        let contenitore = document.getElementById('info');
-        contenitore.append(`${key}, ${objIesimo[key]}`)
-    }
-}
+// for (i = 0; i < ourTeam.length; i++){
+//     let objIesimo = ourTeam[i];
+//     // console.log(objIesimo);
+//     for(let key in objIesimo){
+//         console.log(key, objIesimo[key]);
+//         let contenitore = document.getElementById('info');
+//         contenitore.append(`${' ' + key}: ${objIesimo[key]}`)
+//     }
+// }
 
 // Per ogni oggetto dell'array deve creare un div
 
 
-for(i = 0; i < ourTeam.length; i++){
-    let crea = createBox('div', 'box', [i]);
-
+const infoCont = document.getElementById('info');
+for (let i = 0; i < ourTeam.length; i++){
+    infoCont.innerHTML += `<div class="stringhe">${ourTeam[i].nome} ${ourTeam[i].role} ${ourTeam[i].image}</div>`;
 }
 
 
@@ -74,16 +74,19 @@ for(i = 0; i < ourTeam.length; i++){
 
 
 
+// let crea = createBox('div', 'box', [i]);
+// for(i = 0; i < ourTeam.length; i++){
 
+// }
 
-// FUNCTIONS
-function createBox(tipoElemento, classe, insertData){
-    // Creo un elemento div
-    const mioElemnt = document.createElement(tipoElemento);
-    mioElemnt.classList.add(classe);
-    // Aggiungo un parametro alla funzione per aggiungere gli elementi
-    const addData = document.createTextNode(insertData);
-    mioElemnt.appendChild(addData);
-
-    return mioElemnt;
-}
+// // FUNCTIONS
+// function createBox(tipoElemento, classe, insertData){
+//     // Creo un elemento div
+//     const mioElemnt = document.createElement(tipoElemento);
+//     mioElemnt.classList.add(classe);
+//     // Aggiungo un parametro alla funzione per aggiungere gli elementi
+//     const addData = document.createTextNode(insertData);
+//     mioElemnt.appendChild(addData);
+    
+//     return mioElemnt;
+// }
